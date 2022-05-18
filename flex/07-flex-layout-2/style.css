@@ -13,6 +13,8 @@ a {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 li {
@@ -52,16 +54,18 @@ li {
 }
 
 .cards {
-  padding: 16px;
+  padding: 32px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: stretch;
+  gap: 15px;
 }
 
 .card {
+  width: 300px;
+  padding: 10px;
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-
 }
