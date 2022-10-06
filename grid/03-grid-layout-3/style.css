@@ -29,18 +29,23 @@
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
+  grid-template-columns: auto 65%;
 }
 
 .logo {
+  align-self: center;
 }
 
 .menu {
+  align-self: center;
 }
 
 .menu ul {
   list-style-type: none;
   display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
   grid-auto-flow: column;
+  gap: 100px;
 }
 
 .menu ul,
@@ -56,6 +61,8 @@
 
   display: grid;
   gap: 50px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, 1fr);
 }
 
 .sidebar .photo {
@@ -67,6 +74,8 @@
 }
 
 .photo  {
+  display: grid;
+  place-items: center;
 }
 
 .sidebar .side-content {
@@ -74,6 +83,9 @@
   color: black;
   font-size: 16px;
   font-weight: normal;
+
+  display: grid;
+  place-items: center;
 }
 
 .nav {
@@ -104,7 +116,10 @@
   grid-row: 3;
 
   display: grid;
-  grid-auto-flow: column;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+
 }
 
 .article p {
@@ -118,6 +133,8 @@
   background-color: #FFFFFF;
   color: black;
   text-align: center;
+
+  /* height: 200px; */
 }
 
 .card p {
